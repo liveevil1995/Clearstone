@@ -1,0 +1,9 @@
+.title {
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 50px;
+    &_black {
+        color: $main-color;
+    }
+}

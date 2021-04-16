@@ -1,0 +1,33 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/icofonts';
+@import 'libs/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/main';
+@import 'blocks/header';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/drop';
+@import 'blocks/earnings';
+@import 'blocks/history';
+@import 'blocks/slider';
+@import 'blocks/resin';
+@import 'blocks/start';
+@import 'blocks/footer';
+
+@import 'blocks/media';
+
+

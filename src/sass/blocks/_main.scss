@@ -1,0 +1,54 @@
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    &__video {
+        &-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+        }
+        video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+    &__title {
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+    &__items {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 5px;
+        margin-left: 65px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 19px;
+        &:last-child() {
+            margin-bottom: 0;
+        }
+        .icon-checkmark {
+            position: absolute;
+            top: 5px;
+            left: -40px;
+            color: #38E156
+        }
+    }
+    &__button {
+        margin: 0 auto;
+        margin-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+}
