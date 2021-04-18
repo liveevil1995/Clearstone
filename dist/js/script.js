@@ -33,7 +33,8 @@ $(document).ready(function(){
     $('ul.resin__tabs').on('click', 'li:not(.resin__tab_active)', function() {
         $(this)
           .addClass('resin__tab_active').siblings().removeClass('resin__tab_active')
-          .closest('div.container').find('div.resin__item').removeClass('resin__item_active').eq($(this).index()).addClass('resin__item_active');
+          .closest('div.container').find('div.resin__item').removeClass('resin__item_active').eq(
+            $(this).index()).addClass('resin__item_active');
     });
 
     function toggleSlide(item) {
@@ -44,7 +45,7 @@ $(document).ready(function(){
                 $('.resin-item__list').eq(i).toggleClass('resin-item__list_active');
             });
         });
-    };
+    }
 
     toggleSlide('.resign__content-item');
     toggleSlide('.resin-item__back');
